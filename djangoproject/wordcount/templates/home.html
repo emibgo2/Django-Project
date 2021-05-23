@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<h1> 안녕하세요, 여기서 글자를 세세요</h1>
+
+
+<a href="{%url 'about'%}"> ABOUT</a>
+<br>
+
+<form action="{%url 'result'%}">
+    <textarea cols ="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count">
+    <a href="">Home 으로 돌아가기</a>
+</form>
+</body>
+</html>

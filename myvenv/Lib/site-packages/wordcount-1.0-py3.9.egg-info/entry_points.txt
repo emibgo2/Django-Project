@@ -1,0 +1,3 @@
+[console_scripts]
+wordcount = wordcount.wordcount:main
+
