@@ -8,6 +8,9 @@ def home(request):
     blogs = Blog.objects # 쿼리셋
     return render(request,'home.html',{'blogs':blogs})
 
+def map(request):
+    return  render(request,'map.html')
+
 def detail(request,blog_id):
     details = get_object_or_404(Blog, pk=blog_id)
     return render(request,'detail.html',{'details': details})
