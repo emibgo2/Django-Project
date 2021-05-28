@@ -1,0 +1,6 @@
+include LICENSE
+include README.rest
+recursive-include portfolio/templates *
+recursive-include portfolio/migrations *
+recursice-include portfolio/static +-
+
