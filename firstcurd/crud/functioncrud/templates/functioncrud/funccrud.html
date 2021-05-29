@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD 연습</title>
+</head>
+<body>
+    <a href="{% url 'newblog'%}">글쓰기</a>
+
+  {% for blog in blogs%}
+    <h2>{{blog.title}}</h2>
+    <h5>{{blog.pub_date}}</h5>
+    <p>{{blog.body}}</p>
+    <a href="{% url 'update' blog.id%}">수정</a>
+    <a href="{% url 'delete' blog.id %}">삭제</a>
+
+
+  <hr>
+  {% endfor %}
+</body>
+</html>
