@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CRYD</title>
+</head>
+<body>
+<a href="{% url 'new' %}">추가</a>
+
+<br>
+
+{% for blog in object_list%}
+    <h2>{{blog.title}}</h2>
+    <h5>{{blog.created_at}}</h5>
+    <p>{{blog.body}}</p>
+<a href="{%url 'detail' blog.id %}">자세히 보기</a>
+<a href="{%url 'change' blog.id %}">수정</a>
+<a href="{%url 'del' blog.id %}">삭제</a>
+<hr>
+{%endfor%}
+</body>
+</html>
